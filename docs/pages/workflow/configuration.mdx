@@ -16,7 +16,34 @@ The app config (**app.json**, **app.config.js**, **app.config.ts**) is used for 
 
 It must be located at the root of your project, next to the **package.json**. Here is a minimal example:
 
-```json app.json
+```{
+  "expo": {
+    "name": "Reforma & Estilo Studio",
+    "slug": "reforma-estilo-studio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "reformaestilo",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F14"
+    },
+    "android": {
+      "package": "com.reformaestilo.studio",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F0F14"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    }
+  }
+}
 {
   "name": "My app",
   "slug": "my-app"
